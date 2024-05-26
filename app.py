@@ -2,7 +2,7 @@ import os
 import io
 import pandas as pd
 import streamlit as st
-from pytube import Playlist, YouTube, exceptions
+from pytube import Channel, Playlist, YouTube, exceptions
 
 # Adding commented code below as a reminder to use when ready for databases to cache data
 #@st.cache(allow_output_mutation=True)
