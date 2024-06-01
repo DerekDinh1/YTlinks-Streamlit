@@ -17,10 +17,10 @@ def get_playlist_info(playlist_input):
             st.divider()
 
             # Displays playlist data
-            st.write('### Playlist Info',
-                    f'**Playlist Title:** {vid_links.title}',
-                    f'**Number of Videos:** {vid_links.length}',
-                    f'**Playlist ID:** {vid_links._playlist_id}')
+            st.write('# Playlist Info\n',
+                    '#### Playlist Title: \n', vid_links.title,
+                    '\n#### Number of Videos:\n', vid_links.length, 
+                    '\n#### Playlist ID:\n', vid_links._playlist_id)
 
             # Get video data
             video_data = []
