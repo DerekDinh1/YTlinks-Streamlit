@@ -29,10 +29,11 @@ def get_channel_info(channel_input):
         st.divider()
 
         # Displays channel data
-        st.write('### Channel Info')
-        st.write(f'**Channel Name:** {channel.channel_name}')
-        st.write(f'**Channel ID:** {channel.channel_id}')
-        st.write(f'**Channel Owner:** {channel.channel_url}')  # Assuming channel_url is the owner. Adjust if needed.
+        st.write('## Channel Info\n',
+                 '#### Channel Name:\n', {channel.channel_name},
+                 '\n#### Channel ID:\n', {channel.channel_id},
+                 '\n#### Channel Owner:\n', {channel.channel_url})
+        
     except exceptions.RegexMatchError:
         st.write('The provided URL does not match any channel. Please check the URL and try again.')
     except Exception as e:
